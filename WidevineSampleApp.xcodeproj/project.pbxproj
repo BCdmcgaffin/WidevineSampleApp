@@ -12,10 +12,33 @@
 		8F230B8516BB35BC003C6861 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230B8416BB35BC003C6861 /* CoreGraphics.framework */; };
 		8F230B8B16BB35BC003C6861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F230B8916BB35BC003C6861 /* InfoPlist.strings */; };
 		8F230B8D16BB35BC003C6861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230B8C16BB35BC003C6861 /* main.m */; };
-		8F230B9116BB35BC003C6861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230B9016BB35BC003C6861 /* AppDelegate.m */; };
 		8F230B9316BB35BC003C6861 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230B9216BB35BC003C6861 /* Default.png */; };
-		8F230B9516BB35BC003C6861 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230B9416BB35BC003C6861 /* Default@2x.png */; };
-		8F230B9716BB35BC003C6861 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230B9616BB35BC003C6861 /* Default-568h@2x.png */; };
+		8F230BA716BB362D003C6861 /* WidevineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230B9E16BB362D003C6861 /* WidevineInfo.m */; };
+		8F230BA816BB362D003C6861 /* WidevineInfo_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F230B9F16BB362D003C6861 /* WidevineInfo_iphone.xib */; };
+		8F230BA916BB362D003C6861 /* VideoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230BA116BB362D003C6861 /* VideoViewCell.m */; };
+		8F230BAA16BB362D003C6861 /* VideoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BA216BB362D003C6861 /* VideoViewCell.xib */; };
+		8F230BAB16BB362D003C6861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230BA416BB362D003C6861 /* AppDelegate.m */; };
+		8F230BAC16BB362D003C6861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230BA616BB362D003C6861 /* ViewController.m */; };
+		8F230BAF16BB368F003C6861 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BAD16BB368F003C6861 /* Default@2x.png */; };
+		8F230BB016BB368F003C6861 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BAE16BB368F003C6861 /* Default-568h@2x.png */; };
+		8F230BBB16BB36B7003C6861 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB216BB36B7003C6861 /* CFNetwork.framework */; };
+		8F230BBC16BB36B7003C6861 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB316BB36B7003C6861 /* QuartzCore.framework */; };
+		8F230BBD16BB36B7003C6861 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB416BB36B7003C6861 /* AVFoundation.framework */; };
+		8F230BBE16BB36B7003C6861 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB516BB36B7003C6861 /* CoreFoundation.framework */; };
+		8F230BBF16BB36B7003C6861 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB616BB36B7003C6861 /* MediaPlayer.framework */; };
+		8F230BC016BB36B7003C6861 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB716BB36B7003C6861 /* CoreMedia.framework */; };
+		8F230BC116BB36B7003C6861 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB816BB36B7003C6861 /* SystemConfiguration.framework */; };
+		8F230BF316BB37B3003C6861 /* airplay-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCA16BB37B3003C6861 /* airplay-logo.png */; };
+		8F230BF416BB37B3003C6861 /* Controls.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCB16BB37B3003C6861 /* Controls.xib */; };
+		8F230BF516BB37B3003C6861 /* full_screen_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCC16BB37B3003C6861 /* full_screen_btn.png */; };
+		8F230BF616BB37B3003C6861 /* max_track.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCD16BB37B3003C6861 /* max_track.png */; };
+		8F230BF716BB37B3003C6861 /* min_track.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCE16BB37B3003C6861 /* min_track.png */; };
+		8F230BF816BB37B3003C6861 /* pause_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCF16BB37B3003C6861 /* pause_btn.png */; };
+		8F230BF916BB37B3003C6861 /* play_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BD016BB37B3003C6861 /* play_btn.png */; };
+		8F230BFA16BB37B3003C6861 /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BD116BB37B3003C6861 /* thumb.png */; };
+		8F230BFB16BB37B3003C6861 /* libBCiOSSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BEE16BB37B3003C6861 /* libBCiOSSDK.a */; };
+		8F230C0216BB3916003C6861 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C0116BB3916003C6861 /* libstdc++.dylib */; };
+		8F230C0416BB6051003C6861 /* widevine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F230C0316BB6051003C6861 /* widevine.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +50,67 @@
 		8F230B8A16BB35BC003C6861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F230B8C16BB35BC003C6861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F230B8E16BB35BC003C6861 /* WidevineSampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WidevineSampleApp-Prefix.pch"; sourceTree = "<group>"; };
-		8F230B8F16BB35BC003C6861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8F230B9016BB35BC003C6861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F230B9216BB35BC003C6861 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		8F230B9416BB35BC003C6861 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		8F230B9616BB35BC003C6861 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8F230B9D16BB362D003C6861 /* WidevineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidevineInfo.h; sourceTree = "<group>"; };
+		8F230B9E16BB362D003C6861 /* WidevineInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidevineInfo.m; sourceTree = "<group>"; };
+		8F230B9F16BB362D003C6861 /* WidevineInfo_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WidevineInfo_iphone.xib; sourceTree = "<group>"; };
+		8F230BA016BB362D003C6861 /* VideoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewCell.h; sourceTree = "<group>"; };
+		8F230BA116BB362D003C6861 /* VideoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewCell.m; sourceTree = "<group>"; };
+		8F230BA216BB362D003C6861 /* VideoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewCell.xib; sourceTree = "<group>"; };
+		8F230BA316BB362D003C6861 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F230BA416BB362D003C6861 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F230BA516BB362D003C6861 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F230BA616BB362D003C6861 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F230BAD16BB368F003C6861 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8F230BAE16BB368F003C6861 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8F230BB216BB36B7003C6861 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CFNetwork.framework; sourceTree = "<group>"; };
+		8F230BB316BB36B7003C6861 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
+		8F230BB416BB36B7003C6861 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVFoundation.framework; sourceTree = "<group>"; };
+		8F230BB516BB36B7003C6861 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreFoundation.framework; sourceTree = "<group>"; };
+		8F230BB616BB36B7003C6861 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaPlayer.framework; sourceTree = "<group>"; };
+		8F230BB716BB36B7003C6861 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreMedia.framework; sourceTree = "<group>"; };
+		8F230BB816BB36B7003C6861 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+		8F230BCA16BB37B3003C6861 /* airplay-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplay-logo.png"; sourceTree = "<group>"; };
+		8F230BCB16BB37B3003C6861 /* Controls.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Controls.xib; sourceTree = "<group>"; };
+		8F230BCC16BB37B3003C6861 /* full_screen_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_screen_btn.png; sourceTree = "<group>"; };
+		8F230BCD16BB37B3003C6861 /* max_track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max_track.png; sourceTree = "<group>"; };
+		8F230BCE16BB37B3003C6861 /* min_track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = min_track.png; sourceTree = "<group>"; };
+		8F230BCF16BB37B3003C6861 /* pause_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_btn.png; sourceTree = "<group>"; };
+		8F230BD016BB37B3003C6861 /* play_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn.png; sourceTree = "<group>"; };
+		8F230BD116BB37B3003C6861 /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
+		8F230BD216BB37B3003C6861 /* BCAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnalytics.h; sourceTree = "<group>"; };
+		8F230BD316BB37B3003C6861 /* BCCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCatalog.h; sourceTree = "<group>"; };
+		8F230BD416BB37B3003C6861 /* BCComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCComponent.h; sourceTree = "<group>"; };
+		8F230BD516BB37B3003C6861 /* BCCuePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCuePoint.h; sourceTree = "<group>"; };
+		8F230BD616BB37B3003C6861 /* BCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCError.h; sourceTree = "<group>"; };
+		8F230BD716BB37B3003C6861 /* BCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCEvent.h; sourceTree = "<group>"; };
+		8F230BD816BB37B3003C6861 /* BCEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCEventEmitter.h; sourceTree = "<group>"; };
+		8F230BD916BB37B3003C6861 /* BCEventEmitterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCEventEmitterProtocol.h; sourceTree = "<group>"; };
+		8F230BDA16BB37B3003C6861 /* BCEventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCEventLogger.h; sourceTree = "<group>"; };
+		8F230BDB16BB37B3003C6861 /* BCJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCJSONKit.h; sourceTree = "<group>"; };
+		8F230BDC16BB37B3003C6861 /* BCMediaPlaybackProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMediaPlaybackProtocol.h; sourceTree = "<group>"; };
+		8F230BDD16BB37B3003C6861 /* BCMediaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMediaService.h; sourceTree = "<group>"; };
+		8F230BDE16BB37B3003C6861 /* BCPlayerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPlayerItem.h; sourceTree = "<group>"; };
+		8F230BDF16BB37B3003C6861 /* BCPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPlayerView.h; sourceTree = "<group>"; };
+		8F230BE016BB37B3003C6861 /* BCPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPlaylist.h; sourceTree = "<group>"; };
+		8F230BE116BB37B3003C6861 /* BCQueueDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCQueueDisplay.h; sourceTree = "<group>"; };
+		8F230BE216BB37B3003C6861 /* BCQueueManagementProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCQueueManagementProtocol.h; sourceTree = "<group>"; };
+		8F230BE316BB37B3003C6861 /* BCQueuePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCQueuePlayer.h; sourceTree = "<group>"; };
+		8F230BE416BB37B3003C6861 /* BCRegisteringEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRegisteringEventEmitter.h; sourceTree = "<group>"; };
+		8F230BE516BB37B3003C6861 /* BCRendition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRendition.h; sourceTree = "<group>"; };
+		8F230BE616BB37B3003C6861 /* BCRenditionSelectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRenditionSelectionProtocol.h; sourceTree = "<group>"; };
+		8F230BE716BB37B3003C6861 /* BCRenditionSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRenditionSelector.h; sourceTree = "<group>"; };
+		8F230BE816BB37B3003C6861 /* BCRenditionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRenditionSet.h; sourceTree = "<group>"; };
+		8F230BE916BB37B3003C6861 /* BCUIControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUIControls.h; sourceTree = "<group>"; };
+		8F230BEA16BB37B3003C6861 /* BCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCVideo.h; sourceTree = "<group>"; };
+		8F230BEB16BB37B3003C6861 /* BCVideoPlaybackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCVideoPlaybackController.h; sourceTree = "<group>"; };
+		8F230BEC16BB37B3003C6861 /* BCVideoStill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCVideoStill.h; sourceTree = "<group>"; };
+		8F230BEE16BB37B3003C6861 /* libBCiOSSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBCiOSSDK.a; sourceTree = "<group>"; };
+		8F230BF116BB37B3003C6861 /* libWViPhoneAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWViPhoneAPI.a; sourceTree = "<group>"; };
+		8F230BF216BB37B3003C6861 /* WViPhoneAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WViPhoneAPI.h; sourceTree = "<group>"; };
+		8F230BFF16BB382E003C6861 /* BCWidevinePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWidevinePlugin.h; sourceTree = "<group>"; };
+		8F230C0116BB3916003C6861 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		8F230C0316BB6051003C6861 /* widevine.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = widevine.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +121,15 @@
 				8F230B8116BB35BC003C6861 /* UIKit.framework in Frameworks */,
 				8F230B8316BB35BC003C6861 /* Foundation.framework in Frameworks */,
 				8F230B8516BB35BC003C6861 /* CoreGraphics.framework in Frameworks */,
+				8F230BBB16BB36B7003C6861 /* CFNetwork.framework in Frameworks */,
+				8F230BBC16BB36B7003C6861 /* QuartzCore.framework in Frameworks */,
+				8F230BBD16BB36B7003C6861 /* AVFoundation.framework in Frameworks */,
+				8F230BBE16BB36B7003C6861 /* CoreFoundation.framework in Frameworks */,
+				8F230BBF16BB36B7003C6861 /* MediaPlayer.framework in Frameworks */,
+				8F230BC016BB36B7003C6861 /* CoreMedia.framework in Frameworks */,
+				8F230BC116BB36B7003C6861 /* SystemConfiguration.framework in Frameworks */,
+				8F230C0216BB3916003C6861 /* libstdc++.dylib in Frameworks */,
+				8F230BFB16BB37B3003C6861 /* libBCiOSSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +156,14 @@
 		8F230B7F16BB35BC003C6861 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F230C0116BB3916003C6861 /* libstdc++.dylib */,
+				8F230BB216BB36B7003C6861 /* CFNetwork.framework */,
+				8F230BB316BB36B7003C6861 /* QuartzCore.framework */,
+				8F230BB416BB36B7003C6861 /* AVFoundation.framework */,
+				8F230BB516BB36B7003C6861 /* CoreFoundation.framework */,
+				8F230BB616BB36B7003C6861 /* MediaPlayer.framework */,
+				8F230BB716BB36B7003C6861 /* CoreMedia.framework */,
+				8F230BB816BB36B7003C6861 /* SystemConfiguration.framework */,
 				8F230B8016BB35BC003C6861 /* UIKit.framework */,
 				8F230B8216BB35BC003C6861 /* Foundation.framework */,
 				8F230B8416BB35BC003C6861 /* CoreGraphics.framework */,
@@ -78,8 +174,17 @@
 		8F230B8616BB35BC003C6861 /* WidevineSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				8F230B8F16BB35BC003C6861 /* AppDelegate.h */,
-				8F230B9016BB35BC003C6861 /* AppDelegate.m */,
+				8F230BC616BB37B3003C6861 /* lib */,
+				8F230B9D16BB362D003C6861 /* WidevineInfo.h */,
+				8F230B9E16BB362D003C6861 /* WidevineInfo.m */,
+				8F230B9F16BB362D003C6861 /* WidevineInfo_iphone.xib */,
+				8F230BA016BB362D003C6861 /* VideoViewCell.h */,
+				8F230BA116BB362D003C6861 /* VideoViewCell.m */,
+				8F230BA216BB362D003C6861 /* VideoViewCell.xib */,
+				8F230BA316BB362D003C6861 /* AppDelegate.h */,
+				8F230BA416BB362D003C6861 /* AppDelegate.m */,
+				8F230BA516BB362D003C6861 /* ViewController.h */,
+				8F230BA616BB362D003C6861 /* ViewController.m */,
 				8F230B8716BB35BC003C6861 /* Supporting Files */,
 			);
 			path = WidevineSampleApp;
@@ -88,15 +193,102 @@
 		8F230B8716BB35BC003C6861 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F230C0316BB6051003C6861 /* widevine.plist */,
 				8F230B8816BB35BC003C6861 /* WidevineSampleApp-Info.plist */,
 				8F230B8916BB35BC003C6861 /* InfoPlist.strings */,
 				8F230B8C16BB35BC003C6861 /* main.m */,
 				8F230B8E16BB35BC003C6861 /* WidevineSampleApp-Prefix.pch */,
 				8F230B9216BB35BC003C6861 /* Default.png */,
-				8F230B9416BB35BC003C6861 /* Default@2x.png */,
-				8F230B9616BB35BC003C6861 /* Default-568h@2x.png */,
+				8F230BAD16BB368F003C6861 /* Default@2x.png */,
+				8F230BAE16BB368F003C6861 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F230BC616BB37B3003C6861 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8F230BC716BB37B3003C6861 /* bc-ios-sdk */,
+				8F230BF016BB37B3003C6861 /* widevine */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8F230BC716BB37B3003C6861 /* bc-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				8F230BC816BB37B3003C6861 /* Headers */,
+				8F230BED16BB37B3003C6861 /* Libraries */,
+			);
+			path = "bc-ios-sdk";
+			sourceTree = "<group>";
+		};
+		8F230BC816BB37B3003C6861 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8F230BC916BB37B3003C6861 /* Assets */,
+				8F230BD216BB37B3003C6861 /* BCAnalytics.h */,
+				8F230BD316BB37B3003C6861 /* BCCatalog.h */,
+				8F230BD416BB37B3003C6861 /* BCComponent.h */,
+				8F230BD516BB37B3003C6861 /* BCCuePoint.h */,
+				8F230BD616BB37B3003C6861 /* BCError.h */,
+				8F230BD716BB37B3003C6861 /* BCEvent.h */,
+				8F230BD816BB37B3003C6861 /* BCEventEmitter.h */,
+				8F230BD916BB37B3003C6861 /* BCEventEmitterProtocol.h */,
+				8F230BDA16BB37B3003C6861 /* BCEventLogger.h */,
+				8F230BDB16BB37B3003C6861 /* BCJSONKit.h */,
+				8F230BDC16BB37B3003C6861 /* BCMediaPlaybackProtocol.h */,
+				8F230BDD16BB37B3003C6861 /* BCMediaService.h */,
+				8F230BDE16BB37B3003C6861 /* BCPlayerItem.h */,
+				8F230BDF16BB37B3003C6861 /* BCPlayerView.h */,
+				8F230BE016BB37B3003C6861 /* BCPlaylist.h */,
+				8F230BE116BB37B3003C6861 /* BCQueueDisplay.h */,
+				8F230BE216BB37B3003C6861 /* BCQueueManagementProtocol.h */,
+				8F230BE316BB37B3003C6861 /* BCQueuePlayer.h */,
+				8F230BE416BB37B3003C6861 /* BCRegisteringEventEmitter.h */,
+				8F230BE516BB37B3003C6861 /* BCRendition.h */,
+				8F230BE616BB37B3003C6861 /* BCRenditionSelectionProtocol.h */,
+				8F230BE716BB37B3003C6861 /* BCRenditionSelector.h */,
+				8F230BE816BB37B3003C6861 /* BCRenditionSet.h */,
+				8F230BE916BB37B3003C6861 /* BCUIControls.h */,
+				8F230BEA16BB37B3003C6861 /* BCVideo.h */,
+				8F230BEB16BB37B3003C6861 /* BCVideoPlaybackController.h */,
+				8F230BEC16BB37B3003C6861 /* BCVideoStill.h */,
+				8F230BFF16BB382E003C6861 /* BCWidevinePlugin.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8F230BC916BB37B3003C6861 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8F230BCA16BB37B3003C6861 /* airplay-logo.png */,
+				8F230BCB16BB37B3003C6861 /* Controls.xib */,
+				8F230BCC16BB37B3003C6861 /* full_screen_btn.png */,
+				8F230BCD16BB37B3003C6861 /* max_track.png */,
+				8F230BCE16BB37B3003C6861 /* min_track.png */,
+				8F230BCF16BB37B3003C6861 /* pause_btn.png */,
+				8F230BD016BB37B3003C6861 /* play_btn.png */,
+				8F230BD116BB37B3003C6861 /* thumb.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8F230BED16BB37B3003C6861 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8F230BEE16BB37B3003C6861 /* libBCiOSSDK.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		8F230BF016BB37B3003C6861 /* widevine */ = {
+			isa = PBXGroup;
+			children = (
+				8F230BF116BB37B3003C6861 /* libWViPhoneAPI.a */,
+				8F230BF216BB37B3003C6861 /* WViPhoneAPI.h */,
+			);
+			path = widevine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +344,19 @@
 			files = (
 				8F230B8B16BB35BC003C6861 /* InfoPlist.strings in Resources */,
 				8F230B9316BB35BC003C6861 /* Default.png in Resources */,
-				8F230B9516BB35BC003C6861 /* Default@2x.png in Resources */,
-				8F230B9716BB35BC003C6861 /* Default-568h@2x.png in Resources */,
+				8F230BA816BB362D003C6861 /* WidevineInfo_iphone.xib in Resources */,
+				8F230BAA16BB362D003C6861 /* VideoViewCell.xib in Resources */,
+				8F230BAF16BB368F003C6861 /* Default@2x.png in Resources */,
+				8F230BB016BB368F003C6861 /* Default-568h@2x.png in Resources */,
+				8F230BF316BB37B3003C6861 /* airplay-logo.png in Resources */,
+				8F230BF416BB37B3003C6861 /* Controls.xib in Resources */,
+				8F230BF516BB37B3003C6861 /* full_screen_btn.png in Resources */,
+				8F230BF616BB37B3003C6861 /* max_track.png in Resources */,
+				8F230BF716BB37B3003C6861 /* min_track.png in Resources */,
+				8F230BF816BB37B3003C6861 /* pause_btn.png in Resources */,
+				8F230BF916BB37B3003C6861 /* play_btn.png in Resources */,
+				8F230BFA16BB37B3003C6861 /* thumb.png in Resources */,
+				8F230C0416BB6051003C6861 /* widevine.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F230B8D16BB35BC003C6861 /* main.m in Sources */,
-				8F230B9116BB35BC003C6861 /* AppDelegate.m in Sources */,
+				8F230BA716BB362D003C6861 /* WidevineInfo.m in Sources */,
+				8F230BA916BB362D003C6861 /* VideoViewCell.m in Sources */,
+				8F230BAB16BB362D003C6861 /* AppDelegate.m in Sources */,
+				8F230BAC16BB362D003C6861 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -240,10 +446,25 @@
 		8F230B9B16BB35BC003C6861 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WidevineSampleApp/WidevineSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "WidevineSampleApp/WidevineSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/WidevineSampleApp\"",
+					"\"$(SRCROOT)/WidevineSampleApp/lib/bc-ios-sdk/Libraries\"",
+					"\"$(SRCROOT)/WidevineSampleApp/lib\"",
+					"\"$(SRCROOT)/WidevineSampleApp/lib/widevine\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -251,10 +472,25 @@
 		8F230B9C16BB35BC003C6861 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WidevineSampleApp/WidevineSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "WidevineSampleApp/WidevineSampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/WidevineSampleApp\"",
+					"\"$(SRCROOT)/WidevineSampleApp/lib/bc-ios-sdk/Libraries\"",
+					"\"$(SRCROOT)/WidevineSampleApp/lib\"",
+					"\"$(SRCROOT)/WidevineSampleApp/lib/widevine\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
