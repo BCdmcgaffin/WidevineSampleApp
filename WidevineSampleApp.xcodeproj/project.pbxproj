@@ -21,13 +21,6 @@
 		8F230BAC16BB362D003C6861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230BA616BB362D003C6861 /* ViewController.m */; };
 		8F230BAF16BB368F003C6861 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BAD16BB368F003C6861 /* Default@2x.png */; };
 		8F230BB016BB368F003C6861 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BAE16BB368F003C6861 /* Default-568h@2x.png */; };
-		8F230BBB16BB36B7003C6861 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB216BB36B7003C6861 /* CFNetwork.framework */; };
-		8F230BBC16BB36B7003C6861 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB316BB36B7003C6861 /* QuartzCore.framework */; };
-		8F230BBD16BB36B7003C6861 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB416BB36B7003C6861 /* AVFoundation.framework */; };
-		8F230BBE16BB36B7003C6861 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB516BB36B7003C6861 /* CoreFoundation.framework */; };
-		8F230BBF16BB36B7003C6861 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB616BB36B7003C6861 /* MediaPlayer.framework */; };
-		8F230BC016BB36B7003C6861 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB716BB36B7003C6861 /* CoreMedia.framework */; };
-		8F230BC116BB36B7003C6861 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230BB816BB36B7003C6861 /* SystemConfiguration.framework */; };
 		8F230BF316BB37B3003C6861 /* airplay-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCA16BB37B3003C6861 /* airplay-logo.png */; };
 		8F230BF416BB37B3003C6861 /* Controls.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCB16BB37B3003C6861 /* Controls.xib */; };
 		8F230BF516BB37B3003C6861 /* full_screen_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F230BCC16BB37B3003C6861 /* full_screen_btn.png */; };
@@ -42,6 +35,13 @@
 		8F230C0916BB6885003C6861 /* libBCWidevinePlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C0816BB6885003C6861 /* libBCWidevinePlugin.a */; };
 		8F230C1416BB6F85003C6861 /* BCRenditionSelector+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C1216BB6F85003C6861 /* BCRenditionSelector+Widevine.m */; };
 		8F230C1516BB6F85003C6861 /* BCMediaService+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C1316BB6F85003C6861 /* BCMediaService+Widevine.m */; };
+		8F230C1716BB7152003C6861 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1616BB7152003C6861 /* CFNetwork.framework */; };
+		8F230C1916BB7172003C6861 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1816BB7171003C6861 /* QuartzCore.framework */; };
+		8F230C1B16BB717B003C6861 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1A16BB717B003C6861 /* AVFoundation.framework */; };
+		8F230C1D16BB7181003C6861 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1C16BB7181003C6861 /* CoreFoundation.framework */; };
+		8F230C1F16BB7189003C6861 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1E16BB7189003C6861 /* MediaPlayer.framework */; };
+		8F230C2116BB718F003C6861 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C2016BB718E003C6861 /* CoreMedia.framework */; };
+		8F230C2316BB7196003C6861 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C2216BB7196003C6861 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,13 +66,6 @@
 		8F230BA616BB362D003C6861 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8F230BAD16BB368F003C6861 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8F230BAE16BB368F003C6861 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8F230BB216BB36B7003C6861 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CFNetwork.framework; sourceTree = "<group>"; };
-		8F230BB316BB36B7003C6861 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
-		8F230BB416BB36B7003C6861 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVFoundation.framework; sourceTree = "<group>"; };
-		8F230BB516BB36B7003C6861 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreFoundation.framework; sourceTree = "<group>"; };
-		8F230BB616BB36B7003C6861 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaPlayer.framework; sourceTree = "<group>"; };
-		8F230BB716BB36B7003C6861 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreMedia.framework; sourceTree = "<group>"; };
-		8F230BB816BB36B7003C6861 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
 		8F230BCA16BB37B3003C6861 /* airplay-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplay-logo.png"; sourceTree = "<group>"; };
 		8F230BCB16BB37B3003C6861 /* Controls.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Controls.xib; sourceTree = "<group>"; };
 		8F230BCC16BB37B3003C6861 /* full_screen_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_screen_btn.png; sourceTree = "<group>"; };
@@ -119,6 +112,13 @@
 		8F230C0B16BB6996003C6861 /* BCMediaService+Widevine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMediaService+Widevine.h"; sourceTree = "<group>"; };
 		8F230C1216BB6F85003C6861 /* BCRenditionSelector+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCRenditionSelector+Widevine.m"; sourceTree = "<group>"; };
 		8F230C1316BB6F85003C6861 /* BCMediaService+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMediaService+Widevine.m"; sourceTree = "<group>"; };
+		8F230C1616BB7152003C6861 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8F230C1816BB7171003C6861 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8F230C1A16BB717B003C6861 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F230C1C16BB7181003C6861 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8F230C1E16BB7189003C6861 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8F230C2016BB718E003C6861 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8F230C2216BB7196003C6861 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,16 +126,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F230C2316BB7196003C6861 /* SystemConfiguration.framework in Frameworks */,
+				8F230C2116BB718F003C6861 /* CoreMedia.framework in Frameworks */,
+				8F230C1F16BB7189003C6861 /* MediaPlayer.framework in Frameworks */,
+				8F230C1D16BB7181003C6861 /* CoreFoundation.framework in Frameworks */,
+				8F230C1B16BB717B003C6861 /* AVFoundation.framework in Frameworks */,
+				8F230C1916BB7172003C6861 /* QuartzCore.framework in Frameworks */,
+				8F230C1716BB7152003C6861 /* CFNetwork.framework in Frameworks */,
 				8F230B8116BB35BC003C6861 /* UIKit.framework in Frameworks */,
 				8F230B8316BB35BC003C6861 /* Foundation.framework in Frameworks */,
 				8F230B8516BB35BC003C6861 /* CoreGraphics.framework in Frameworks */,
-				8F230BBB16BB36B7003C6861 /* CFNetwork.framework in Frameworks */,
-				8F230BBC16BB36B7003C6861 /* QuartzCore.framework in Frameworks */,
-				8F230BBD16BB36B7003C6861 /* AVFoundation.framework in Frameworks */,
-				8F230BBE16BB36B7003C6861 /* CoreFoundation.framework in Frameworks */,
-				8F230BBF16BB36B7003C6861 /* MediaPlayer.framework in Frameworks */,
-				8F230BC016BB36B7003C6861 /* CoreMedia.framework in Frameworks */,
-				8F230BC116BB36B7003C6861 /* SystemConfiguration.framework in Frameworks */,
 				8F230C0216BB3916003C6861 /* libstdc++.dylib in Frameworks */,
 				8F230BFB16BB37B3003C6861 /* libBCiOSSDK.a in Frameworks */,
 				8F230C0916BB6885003C6861 /* libBCWidevinePlugin.a in Frameworks */,
@@ -166,13 +166,13 @@
 			isa = PBXGroup;
 			children = (
 				8F230C0116BB3916003C6861 /* libstdc++.dylib */,
-				8F230BB216BB36B7003C6861 /* CFNetwork.framework */,
-				8F230BB316BB36B7003C6861 /* QuartzCore.framework */,
-				8F230BB416BB36B7003C6861 /* AVFoundation.framework */,
-				8F230BB516BB36B7003C6861 /* CoreFoundation.framework */,
-				8F230BB616BB36B7003C6861 /* MediaPlayer.framework */,
-				8F230BB716BB36B7003C6861 /* CoreMedia.framework */,
-				8F230BB816BB36B7003C6861 /* SystemConfiguration.framework */,
+				8F230C2216BB7196003C6861 /* SystemConfiguration.framework */,
+				8F230C2016BB718E003C6861 /* CoreMedia.framework */,
+				8F230C1E16BB7189003C6861 /* MediaPlayer.framework */,
+				8F230C1C16BB7181003C6861 /* CoreFoundation.framework */,
+				8F230C1A16BB717B003C6861 /* AVFoundation.framework */,
+				8F230C1816BB7171003C6861 /* QuartzCore.framework */,
+				8F230C1616BB7152003C6861 /* CFNetwork.framework */,
 				8F230B8016BB35BC003C6861 /* UIKit.framework */,
 				8F230B8216BB35BC003C6861 /* Foundation.framework */,
 				8F230B8416BB35BC003C6861 /* CoreGraphics.framework */,
