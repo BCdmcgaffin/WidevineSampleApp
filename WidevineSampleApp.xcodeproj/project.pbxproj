@@ -33,8 +33,6 @@
 		8F230C0216BB3916003C6861 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C0116BB3916003C6861 /* libstdc++.dylib */; };
 		8F230C0416BB6051003C6861 /* widevine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F230C0316BB6051003C6861 /* widevine.plist */; };
 		8F230C0916BB6885003C6861 /* libBCWidevinePlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C0816BB6885003C6861 /* libBCWidevinePlugin.a */; };
-		8F230C1416BB6F85003C6861 /* BCRenditionSelector+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C1216BB6F85003C6861 /* BCRenditionSelector+Widevine.m */; };
-		8F230C1516BB6F85003C6861 /* BCMediaService+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C1316BB6F85003C6861 /* BCMediaService+Widevine.m */; };
 		8F230C1716BB7152003C6861 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1616BB7152003C6861 /* CFNetwork.framework */; };
 		8F230C1916BB7172003C6861 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1816BB7171003C6861 /* QuartzCore.framework */; };
 		8F230C1B16BB717B003C6861 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1A16BB717B003C6861 /* AVFoundation.framework */; };
@@ -42,6 +40,8 @@
 		8F230C1F16BB7189003C6861 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C1E16BB7189003C6861 /* MediaPlayer.framework */; };
 		8F230C2116BB718F003C6861 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C2016BB718E003C6861 /* CoreMedia.framework */; };
 		8F230C2316BB7196003C6861 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C2216BB7196003C6861 /* SystemConfiguration.framework */; };
+		8F230C2616BC6C4B003C6861 /* BCRenditionSelector+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C2416BC6C4B003C6861 /* BCRenditionSelector+Widevine.m */; };
+		8F230C2716BC6C4B003C6861 /* BCMediaService+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C2516BC6C4B003C6861 /* BCMediaService+Widevine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,8 +110,6 @@
 		8F230C0816BB6885003C6861 /* libBCWidevinePlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBCWidevinePlugin.a; sourceTree = "<group>"; };
 		8F230C0A16BB6996003C6861 /* BCRenditionSelector+Widevine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCRenditionSelector+Widevine.h"; sourceTree = "<group>"; };
 		8F230C0B16BB6996003C6861 /* BCMediaService+Widevine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMediaService+Widevine.h"; sourceTree = "<group>"; };
-		8F230C1216BB6F85003C6861 /* BCRenditionSelector+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCRenditionSelector+Widevine.m"; sourceTree = "<group>"; };
-		8F230C1316BB6F85003C6861 /* BCMediaService+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMediaService+Widevine.m"; sourceTree = "<group>"; };
 		8F230C1616BB7152003C6861 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8F230C1816BB7171003C6861 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8F230C1A16BB717B003C6861 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +117,8 @@
 		8F230C1E16BB7189003C6861 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8F230C2016BB718E003C6861 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		8F230C2216BB7196003C6861 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8F230C2416BC6C4B003C6861 /* BCRenditionSelector+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCRenditionSelector+Widevine.m"; sourceTree = "<group>"; };
+		8F230C2516BC6C4B003C6861 /* BCMediaService+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMediaService+Widevine.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +226,8 @@
 		8F230BC716BB37B3003C6861 /* bc-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
-				8F230C1216BB6F85003C6861 /* BCRenditionSelector+Widevine.m */,
-				8F230C1316BB6F85003C6861 /* BCMediaService+Widevine.m */,
+				8F230C2416BC6C4B003C6861 /* BCRenditionSelector+Widevine.m */,
+				8F230C2516BC6C4B003C6861 /* BCMediaService+Widevine.m */,
 				8F230BC816BB37B3003C6861 /* Headers */,
 				8F230BED16BB37B3003C6861 /* Libraries */,
 			);
@@ -386,8 +386,8 @@
 				8F230BA916BB362D003C6861 /* VideoViewCell.m in Sources */,
 				8F230BAB16BB362D003C6861 /* AppDelegate.m in Sources */,
 				8F230BAC16BB362D003C6861 /* ViewController.m in Sources */,
-				8F230C1416BB6F85003C6861 /* BCRenditionSelector+Widevine.m in Sources */,
-				8F230C1516BB6F85003C6861 /* BCMediaService+Widevine.m in Sources */,
+				8F230C2616BC6C4B003C6861 /* BCRenditionSelector+Widevine.m in Sources */,
+				8F230C2716BC6C4B003C6861 /* BCMediaService+Widevine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +530,7 @@
 				8F230B9C16BB35BC003C6861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
