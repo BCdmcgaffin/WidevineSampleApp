@@ -14,8 +14,7 @@
     BCWidevinePlugin *widevinePlugin;
 }
 
-- (id)initWithEventEmitter:(BCEventEmitter *)eventEmitter
-plugin:(BCWidevinePlugin *) widevinePlugin;
+- (id)initWithEventEmitter:(BCEventEmitter *)eventEmitter plugin:(BCWidevinePlugin *) widevinePlugin;
 
 @property(nonatomic,retain) IBOutlet UIView *widevineInfoView;
 

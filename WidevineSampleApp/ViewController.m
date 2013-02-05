@@ -14,6 +14,7 @@
 #import "BCPlaylist.h"
 #import "BCEvent.h"
 #import "BCWidevinePlugin.h"
+#import "Constants.h"
 
 #import "WidevineInfo.h"
 #import "ViewController.h"
@@ -58,6 +59,8 @@
     self.controlsComponent = nil;
     self.infoComponent = nil;
     
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     [super dealloc];
 }
 
@@ -68,11 +71,23 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"widevine" ofType:@"plist"];
     NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
     
-    
     // To test with a different base url for the media api, add a string value to 'widevine.plist' named
     // 'mediaApiBaseUrl' with the value set to the base url you would like to test.
     [self initializePluginWithToken:(NSString *) [dictionary objectForKey:@"mediaApiToken"]
                             baseUrl:[dictionary objectForKey:@"mediaApiBaseUrl"]];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(refreshPlaylist)
+                                                 name:BCWidevinePluginRefreshPlaylist
+                                               object:nil];
+    [self refreshPlaylist];
+}
+
+- (void)refreshPlaylist
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"widevine" ofType:@"plist"];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    [self.widevinePlugin stop];
     
     __block ViewController *weakself = self;
     [widevinePlugin findPlaylistByReferenceID:[dictionary objectForKey:@"iosPlaylistReferenceId"]
@@ -80,9 +95,14 @@
                                     callBlock:^(BCError *error, BCPlaylist *playlist) {
                                         
                                         if (playlist) {
-                                            [weakself createInfoView];
+                                            if (!self.infoComponent) {
+                                                [weakself createInfoView];
+                                            }
                                             BCVideo *firstVideo = [playlist.videos objectAtIndex:0];
                                             [widevinePlugin queueVideo:firstVideo];
+                                            
+                                            [[NSNotificationCenter defaultCenter] postNotification:
+                                             [NSNotification notificationWithName:BCWidevinePluginDidRefreshPlaylist object:self]];
                                         } else if (error) {
                                             [weakself displayErrorAlert:error.description];
                                         }
@@ -107,6 +127,11 @@
     __block ViewController *weakself = self;
     [self.eventEmitter once:BCEventVideoDidEnd callBlock:^(BCEvent *event) {
         weakself.widevinePlugin.autoPlay = YES;
+    }];
+    
+    [self.eventEmitter on:BCEventDidSetVideo callBlock:^(BCEvent *event) {
+        [[NSNotificationCenter defaultCenter] postNotification:
+         [NSNotification notificationWithName:BCWidevinePluginDidSetVideo object:self userInfo:event.details]];
     }];
 
     UIView *controlsView = [[UIView alloc] initWithFrame:CGRectMake(0, 180, 320, 50)];

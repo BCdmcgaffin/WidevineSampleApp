@@ -10,6 +10,8 @@
 #import "BCVideo.h"
 #import "BCEvent.h"
 #import "BCWidevinePlugin.h"
+#import "UIScrollView+SVPullToRefresh.h"
+#import "Constants.h"
 
 #import "WidevineInfo.h"
 
@@ -33,6 +35,17 @@
         [[NSBundle mainBundle] loadNibNamed:@"WidevineInfo_iphone" owner:self options:nil];
         
         self.widevinePlugin = plugin;
+        
+        [self.tableView addPullToRefreshWithActionHandler:^{
+            [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:BCWidevinePluginRefreshPlaylist
+                                                                                                 object:self]];
+            self.widevinePlugin.autoPlay = NO;
+            [self.tableView.pullToRefreshView stopAnimating];
+        }];
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(reloadPlaylist) name:BCWidevinePluginDidRefreshPlaylist object:nil];
+        [nc addObserver:self selector:@selector(selectVideo:) name:BCWidevinePluginDidSetVideo object:nil];
     }
     
     return self;
@@ -43,8 +56,31 @@
     self.widevineInfoView = nil;
     self.widevinePlugin = nil;
     
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     [super dealloc];
 }
+
+- (void)reloadPlaylist
+{
+    [self.tableView reloadData];
+    [self.tableView.pullToRefreshView stopAnimating];
+    
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
+                                animated:YES
+                          scrollPosition:UITableViewScrollPositionTop];
+}
+
+- (void)selectVideo:(NSNotification *)notification
+{
+    BCVideo *video = [notification.userInfo objectForKey:@"video"];
+    NSUInteger row = [self.widevinePlugin.playlist.videos indexOfObject:video];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0]
+                                animated:YES
+                          scrollPosition:UITableViewScrollPositionMiddle];
+}
+
+#pragma mark - UITableView Delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

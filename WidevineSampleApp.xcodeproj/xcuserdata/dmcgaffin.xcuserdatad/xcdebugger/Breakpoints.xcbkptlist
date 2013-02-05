@@ -7,13 +7,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "WidevineSampleApp/ViewController.m"
-         timestampString = "381442687.542125"
+         filePath = "WidevineSampleApp/WidevineInfo.m"
+         timestampString = "381811877.784687"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
-         landmarkName = "-initializePluginWithToken:baseUrl:"
+         startingLineNumber = "76"
+         endingLineNumber = "76"
+         landmarkName = "-selectVideo:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F230B7C16BB35BC003C6861"
-               BuildableName = "WidevineSampleApp.app"
-               BlueprintName = "WidevineSampleApp"
+               BuildableName = "Widevine Sample.app"
+               BlueprintName = "Widevine Sample"
                ReferencedContainer = "container:WidevineSampleApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F230B7C16BB35BC003C6861"
-            BuildableName = "WidevineSampleApp.app"
-            BlueprintName = "WidevineSampleApp"
+            BuildableName = "Widevine Sample.app"
+            BlueprintName = "Widevine Sample"
             ReferencedContainer = "container:WidevineSampleApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -52,8 +52,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F230B7C16BB35BC003C6861"
-            BuildableName = "WidevineSampleApp.app"
-            BlueprintName = "WidevineSampleApp"
+            BuildableName = "Widevine Sample.app"
+            BlueprintName = "Widevine Sample"
             ReferencedContainer = "container:WidevineSampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -70,8 +70,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F230B7C16BB35BC003C6861"
-            BuildableName = "WidevineSampleApp.app"
-            BlueprintName = "WidevineSampleApp"
+            BuildableName = "Widevine Sample.app"
+            BlueprintName = "Widevine Sample"
             ReferencedContainer = "container:WidevineSampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

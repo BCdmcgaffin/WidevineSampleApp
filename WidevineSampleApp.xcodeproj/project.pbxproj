@@ -42,6 +42,11 @@
 		8F230C2316BB7196003C6861 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F230C2216BB7196003C6861 /* SystemConfiguration.framework */; };
 		8F230C2616BC6C4B003C6861 /* BCRenditionSelector+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C2416BC6C4B003C6861 /* BCRenditionSelector+Widevine.m */; };
 		8F230C2716BC6C4B003C6861 /* BCMediaService+Widevine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F230C2516BC6C4B003C6861 /* BCMediaService+Widevine.m */; };
+		8F6C285816C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C285516C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		8F6C285916C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C285716C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		8F6C285D16C1C202003F3BC3 /* widevine_sample_app_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C285C16C1C202003F3BC3 /* widevine_sample_app_57.png */; };
+		8F6C285F16C1EF5D003F3BC3 /* widevine_sample_app_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6C285E16C1EF5D003F3BC3 /* widevine_sample_app_114.png */; };
+		8F6C286216C1F54F003F3BC3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C286116C1F54F003F3BC3 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +68,7 @@
 		8F230BA316BB362D003C6861 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F230BA416BB362D003C6861 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F230BA516BB362D003C6861 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8F230BA616BB362D003C6861 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F230BA616BB362D003C6861 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = WidevineSampleApp/ViewController.m; sourceTree = SOURCE_ROOT; };
 		8F230BAD16BB368F003C6861 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8F230BAE16BB368F003C6861 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8F230BCA16BB37B3003C6861 /* airplay-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplay-logo.png"; sourceTree = "<group>"; };
@@ -117,8 +122,17 @@
 		8F230C1E16BB7189003C6861 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8F230C2016BB718E003C6861 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		8F230C2216BB7196003C6861 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		8F230C2416BC6C4B003C6861 /* BCRenditionSelector+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCRenditionSelector+Widevine.m"; sourceTree = "<group>"; };
-		8F230C2516BC6C4B003C6861 /* BCMediaService+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMediaService+Widevine.m"; sourceTree = "<group>"; };
+		8F230C2416BC6C4B003C6861 /* BCRenditionSelector+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BCRenditionSelector+Widevine.m"; path = "WidevineSampleApp/lib/bc-ios-sdk/BCRenditionSelector+Widevine.m"; sourceTree = SOURCE_ROOT; };
+		8F230C2516BC6C4B003C6861 /* BCMediaService+Widevine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BCMediaService+Widevine.m"; path = "WidevineSampleApp/lib/bc-ios-sdk/BCMediaService+Widevine.m"; sourceTree = SOURCE_ROOT; };
+		8F6C285316C1A623003F3BC3 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		8F6C285416C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		8F6C285516C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		8F6C285616C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		8F6C285716C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		8F6C285C16C1C202003F3BC3 /* widevine_sample_app_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = widevine_sample_app_57.png; path = ../widevine_sample_app_57.png; sourceTree = "<group>"; };
+		8F6C285E16C1EF5D003F3BC3 /* widevine_sample_app_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = widevine_sample_app_114.png; path = ../widevine_sample_app_114.png; sourceTree = "<group>"; };
+		8F6C286016C1F458003F3BC3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8F6C286116C1F54F003F3BC3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +197,10 @@
 		8F230B8616BB35BC003C6861 /* WidevineSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				8F6C284916C1396D003F3BC3 /* contrib */,
 				8F230BC616BB37B3003C6861 /* lib */,
+				8F6C286016C1F458003F3BC3 /* Constants.h */,
+				8F6C286116C1F54F003F3BC3 /* Constants.m */,
 				8F230B9D16BB362D003C6861 /* WidevineInfo.h */,
 				8F230B9E16BB362D003C6861 /* WidevineInfo.m */,
 				8F230B9F16BB362D003C6861 /* WidevineInfo_iphone.xib */,
@@ -202,6 +219,8 @@
 		8F230B8716BB35BC003C6861 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F6C285E16C1EF5D003F3BC3 /* widevine_sample_app_114.png */,
+				8F6C285C16C1C202003F3BC3 /* widevine_sample_app_57.png */,
 				8F230C0316BB6051003C6861 /* widevine.plist */,
 				8F230B8816BB35BC003C6861 /* WidevineSampleApp-Info.plist */,
 				8F230B8916BB35BC003C6861 /* InfoPlist.strings */,
@@ -305,12 +324,32 @@
 			path = widevine;
 			sourceTree = "<group>";
 		};
+		8F6C284916C1396D003F3BC3 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				8F6C285216C1A623003F3BC3 /* SVPullToRefresh */,
+			);
+			name = contrib;
+			sourceTree = "<group>";
+		};
+		8F6C285216C1A623003F3BC3 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				8F6C285316C1A623003F3BC3 /* SVPullToRefresh.h */,
+				8F6C285416C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.h */,
+				8F6C285516C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.m */,
+				8F6C285616C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.h */,
+				8F6C285716C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			path = SVPullToRefresh;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F230B7C16BB35BC003C6861 /* WidevineSampleApp */ = {
+		8F230B7C16BB35BC003C6861 /* Widevine Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F230B9A16BB35BC003C6861 /* Build configuration list for PBXNativeTarget "WidevineSampleApp" */;
+			buildConfigurationList = 8F230B9A16BB35BC003C6861 /* Build configuration list for PBXNativeTarget "Widevine Sample" */;
 			buildPhases = (
 				8F230B7916BB35BC003C6861 /* Sources */,
 				8F230B7A16BB35BC003C6861 /* Frameworks */,
@@ -320,7 +359,7 @@
 			);
 			dependencies = (
 			);
-			name = WidevineSampleApp;
+			name = "Widevine Sample";
 			productName = WidevineSampleApp;
 			productReference = 8F230B7D16BB35BC003C6861 /* WidevineSampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -346,7 +385,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F230B7C16BB35BC003C6861 /* WidevineSampleApp */,
+				8F230B7C16BB35BC003C6861 /* Widevine Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -371,6 +410,8 @@
 				8F230BF916BB37B3003C6861 /* play_btn.png in Resources */,
 				8F230BFA16BB37B3003C6861 /* thumb.png in Resources */,
 				8F230C0416BB6051003C6861 /* widevine.plist in Resources */,
+				8F6C285D16C1C202003F3BC3 /* widevine_sample_app_57.png in Resources */,
+				8F6C285F16C1EF5D003F3BC3 /* widevine_sample_app_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +429,9 @@
 				8F230BAC16BB362D003C6861 /* ViewController.m in Sources */,
 				8F230C2616BC6C4B003C6861 /* BCRenditionSelector+Widevine.m in Sources */,
 				8F230C2716BC6C4B003C6861 /* BCMediaService+Widevine.m in Sources */,
+				8F6C285816C1A623003F3BC3 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				8F6C285916C1A623003F3BC3 /* UIScrollView+SVPullToRefresh.m in Sources */,
+				8F6C286216C1F54F003F3BC3 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +513,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WidevineSampleApp/WidevineSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "WidevineSampleApp/WidevineSampleApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -478,6 +522,7 @@
 					"\"$(SRCROOT)/WidevineSampleApp/lib\"",
 					"\"$(SRCROOT)/WidevineSampleApp/lib/widevine\"",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
@@ -495,7 +540,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WidevineSampleApp/WidevineSampleApp-Prefix.pch";
 				INFOPLIST_FILE = "WidevineSampleApp/WidevineSampleApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -504,6 +549,7 @@
 					"\"$(SRCROOT)/WidevineSampleApp/lib\"",
 					"\"$(SRCROOT)/WidevineSampleApp/lib/widevine\"",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = armv7;
@@ -523,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F230B9A16BB35BC003C6861 /* Build configuration list for PBXNativeTarget "WidevineSampleApp" */ = {
+		8F230B9A16BB35BC003C6861 /* Build configuration list for PBXNativeTarget "Widevine Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F230B9B16BB35BC003C6861 /* Debug */,
