@@ -10,6 +10,32 @@ Plugin](http://support.brightcove.com/en/video-cloud/docs/widevine-plugin-bright
 You should feel free to use any of the code in this sample for your own
 iOS apps for Widevine playback.
 
+## Installation ##
+
+This app will soon be available in the App Store, but if you have XCode
+installed, you can build and run it yourself.
+
+### requirements ###
+
+* XCode
+* git
+
+### running the app ###
+
+1. Clone this repository. In the **Terminal** app type:
+
+    ```
+    $ git clone git@github.com:BCdmcgaffin/WidevineSampleApp.git 
+    ```
+
+1. Open the project in XCode. You can do this from Terminal like so:
+    ```
+    $ open WidevineSampleApp/WidevineSampleApp.xcodeproj
+    ```
+
+1. The app will not run in an iOS Simulator, so select your connected
+   iPhone or iPad with at least iOS 5.0 installed and **Run** the app.
+
 ## Usage ##
 
 ### Integrating your app with the Brightcove Media API.
