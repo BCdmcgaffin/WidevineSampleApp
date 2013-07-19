@@ -24,7 +24,6 @@
 
 - (id)init
 {
-    [super dealloc];
     return nil;
 }
 
@@ -36,11 +35,12 @@
         
         self.widevinePlugin = plugin;
         
+        WidevineInfo __weak *weakself = self;
         [self.tableView addPullToRefreshWithActionHandler:^{
             [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:BCWidevinePluginRefreshPlaylist
-                                                                                                 object:self]];
-            self.widevinePlugin.autoPlay = NO;
-            [self.tableView.pullToRefreshView stopAnimating];
+                                                                                                 object:weakself]];
+            weakself.widevinePlugin.autoPlay = NO;
+            [weakself.tableView.pullToRefreshView stopAnimating];
         }];
         
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
@@ -53,12 +53,9 @@
 
 - (void)dealloc
 {
-    self.widevineInfoView = nil;
-    self.widevinePlugin = nil;
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    [super dealloc];
 }
 
 - (void)reloadPlaylist
