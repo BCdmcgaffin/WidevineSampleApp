@@ -31,7 +31,6 @@
     UIView *bgColorView = [[UIView alloc] init];
     [bgColorView setBackgroundColor:[UIColor colorWithRed:0.016 green:0.333 blue:0.569 alpha:1]]; /*#045591*/
     [self setSelectedBackgroundView:bgColorView];
-    [bgColorView release];
 }
 
 + (NSString *)reuseIdentifier {

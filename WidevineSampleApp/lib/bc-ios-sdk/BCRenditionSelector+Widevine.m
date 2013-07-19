@@ -39,7 +39,7 @@
             
             switch (status) {
                 case WViOsApiStatus_OK:
-                    rendition = [[[BCRendition alloc] initWithURL: [NSURL URLWithString:responseUrl]] autorelease];
+                    rendition = [[BCRendition alloc] initWithURL: [NSURL URLWithString:responseUrl]];
                     break;
                 case WViOsApiStatus_AlreadyPlaying:
                     // The rendition cannot be changed because WV_Play() can only manage one video at a time

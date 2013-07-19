@@ -19,7 +19,7 @@
  */
 - (BCVideo *)makeVideoWithJSON:(NSDictionary *)json
 {
-    NSMutableDictionary *properties = [[[NSMutableDictionary alloc] init] autorelease];
+    NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
     NSDictionary *wvmRendition = nil;
     
     // Checking !=NULL, !=Nil, isEqual:Nil are not sufficient for JSON or dictionary objects.
@@ -85,15 +85,15 @@
     BCRenditionSet *renditionSet = nil;
     
     if (wvmRendition) {
-        rendition = [[[BCRendition alloc] initWithURL:[NSURL URLWithString:[wvmRendition objectForKey:@"url"]]] autorelease];
+        rendition = [[BCRendition alloc] initWithURL:[NSURL URLWithString:[wvmRendition objectForKey:@"url"]]];
     } else {
         // if no widevine rendition is found, attempt to playback the FLVURL as a normal video.
-        rendition = [[[BCRendition alloc] initWithURL:[NSURL URLWithString:[json objectForKey:@"FLVURL"]]] autorelease];
+        rendition = [[BCRendition alloc] initWithURL:[NSURL URLWithString:[json objectForKey:@"FLVURL"]]];
     }
-    renditionSet = [[[BCRenditionSet alloc] initWithRenditions:[NSArray arrayWithObject:rendition]
-                                                                deliveryMethod:[NSDictionary dictionary]] autorelease];
+    renditionSet = [[BCRenditionSet alloc] initWithRenditions:[NSArray arrayWithObject:rendition]
+                                                                deliveryMethod:[NSDictionary dictionary]];
     
-    return [[[BCVideo alloc] initWithRenditionSets: [NSArray arrayWithObject:renditionSet]
-                                        properties: [NSDictionary dictionaryWithDictionary:properties]] autorelease];
+    return [[BCVideo alloc] initWithRenditionSets: [NSArray arrayWithObject:renditionSet]
+                                        properties: [NSDictionary dictionaryWithDictionary:properties]];
 }
 @end

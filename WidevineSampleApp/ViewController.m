@@ -30,13 +30,13 @@
     WidevineInfo *infoComponent;
 }
 
-@property(nonatomic,retain) BCWidevinePlugin *widevinePlugin;
-@property(nonatomic,retain) BCQueuePlayer *player;
-@property(nonatomic,retain) BCCatalog *catalog;
-@property(nonatomic,retain) BCEventEmitter *eventEmitter;
-@property(nonatomic,retain) BCEventLogger *logger;
-@property(nonatomic,retain) BCUIControls *controlsComponent;
-@property(nonatomic,retain) WidevineInfo *infoComponent;
+@property(nonatomic,strong) BCWidevinePlugin *widevinePlugin;
+@property(nonatomic,strong) BCQueuePlayer *player;
+@property(nonatomic,strong) BCCatalog *catalog;
+@property(nonatomic,strong) BCEventEmitter *eventEmitter;
+@property(nonatomic,strong) BCEventLogger *logger;
+@property(nonatomic,strong) BCUIControls *controlsComponent;
+@property(nonatomic,strong) WidevineInfo *infoComponent;
 @end
 
 @implementation ViewController
@@ -51,17 +51,9 @@
 
 - (void)dealloc
 {
-    self.widevinePlugin = nil;
-    self.player = nil;
-    self.catalog = nil;
-    self.eventEmitter = nil;
-    self.logger = nil;
-    self.controlsComponent = nil;
-    self.infoComponent = nil;
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
-    [super dealloc];
 }
 
 - (void)viewDidLoad
@@ -89,7 +81,7 @@
     
     [self.widevinePlugin stop];
     
-    __block ViewController *weakself = self;
+    __weak ViewController *weakself = self;
     [widevinePlugin findPlaylistByReferenceID:[dictionary objectForKey:@"iosPlaylistReferenceId"]
                                       options:nil
                                     callBlock:^(BCError *error, BCPlaylist *playlist) {
@@ -124,7 +116,7 @@
     [self.logger setVerbose:NO];
     
     // First video will not auto-play, but subsequent videos will.
-    __block ViewController *weakself = self;
+    __weak ViewController *weakself = self;
     [self.eventEmitter once:BCEventVideoDidEnd callBlock:^(BCEvent *event) {
         weakself.widevinePlugin.autoPlay = YES;
     }];
@@ -164,7 +156,6 @@
                                           cancelButtonTitle:@"ok"
                                           otherButtonTitles:nil];
     [alert show];
-    [alert release];
 }
 
 - (void)createInfoView
